@@ -15,3 +15,20 @@ jobs:
         run: npm ci
       - name: Run test
         run: npm test
+
+  delopy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get codes
+        uses: actions/checkout@v4
+      - name: Install Nodejs
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependecies
+        run: npm ci
+      - name: build project
+        run: npm run build
+      - name: Delopy
+        run: echo "Deploy done "
