@@ -7,9 +7,9 @@ jobs:
       - name: Get codes
         uses: actions/checkout@v4
       - name: Install Nodejs
-        uses: actions/setup-nodes@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "20"
 
       - name: Install dependecies
         run: npm ci
