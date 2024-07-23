@@ -5,4 +5,6 @@ jobs:
     runs-on: ubuntu-lastest
     steps:
       - name: output github contex
+        run: echo "run the 1st print "
+      - name: output github contex
         run: echo "${{ toJson(github)}}"
