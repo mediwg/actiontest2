@@ -1,0 +1,8 @@
+name: output infor
+on: workflow_dispatch
+jobs:
+  info:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: output github contex
+        run: echo "${{ toJson(github)}}"
