@@ -2,7 +2,7 @@ name: output infor
 on: workflow_dispatch
 jobs:
   info:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: output github contex
         run: echo "run the 1st print "
